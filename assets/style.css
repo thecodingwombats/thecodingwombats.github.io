@@ -124,3 +124,49 @@ a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset:
 .doc h3 { font-size: 17px; margin-top: 28px; }
 .doc .meta { color: var(--muted); font-size: 14px; }
 .doc li { margin-bottom: 8px; }
+
+/* Studio home */
+.studio-hero { padding: 72px 0 36px; }
+.studio-hero h1 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(36px, 6.5vw, 52px);
+    line-height: 1.12;
+    margin: 0 0 14px;
+}
+.studio-hero p { font-size: 19px; color: var(--muted); margin: 0; max-width: 32em; }
+.section-label {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 24px 0 14px;
+}
+.app-card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 18px 20px;
+    color: var(--text);
+    text-decoration: none;
+    transition: border-color 0.15s, transform 0.15s;
+}
+.app-card:hover { border-color: var(--accent); transform: translateY(-1px); }
+.app-card img { width: 64px; height: 64px; border-radius: 15px; flex: none; }
+.app-card h3 { margin: 0 0 2px; font-size: 18px; }
+.app-card p { margin: 0; color: var(--muted); font-size: 15px; }
+.app-card .status { margin-left: auto; font-size: 13px; color: var(--muted); white-space: nowrap; }
+@media (max-width: 520px) { .app-card .status { display: none; } }
+.principles { padding: 40px 0 56px; color: var(--muted); }
+.principles p { margin: 0; max-width: 36em; }
+
+.brand, .site-header nav a { white-space: nowrap; }
+@media (max-width: 440px) {
+    .site-header { flex-wrap: wrap; gap: 6px 0; }
+    .site-header nav { width: 100%; }
+    .site-header nav a { margin: 0 16px 0 0; }
+}
