@@ -85,11 +85,17 @@ a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset:
     letter-spacing: 0.02em;
 }
 
+.hero-meta {
+    margin: 14px 0 0;
+    font-size: 14px;
+    color: var(--muted);
+}
+
 .features {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 14px;
-    padding: 24px 0 48px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 20px 0 28px;
 }
 @media (max-width: 640px) { .features { grid-template-columns: 1fr; } }
 .feature {
@@ -101,8 +107,32 @@ a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset:
 .feature h3 { margin: 0 0 6px; font-size: 16px; }
 .feature p { margin: 0; color: var(--muted); font-size: 15px; }
 
-.zh-intro { text-align: center; color: var(--muted); padding-bottom: 40px; }
-.zh-intro p { margin: 4px 0; }
+.notice {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px 20px;
+    margin: 0 0 40px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.65;
+}
+.notice p { margin: 0; }
+
+.zh-section {
+    border-top: 1px solid var(--border);
+    padding: 48px 0 16px;
+}
+.zh-hero { text-align: center; padding: 0 0 20px; }
+.zh-hero h2 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(32px, 5.5vw, 42px);
+    line-height: 1.15;
+    margin: 0 0 12px;
+}
+.zh-hero .tagline { font-size: 18px; color: var(--muted); margin: 0 auto; max-width: 30em; }
+.zh-links { text-align: center; color: var(--muted); font-size: 15px; margin: 0 0 32px; }
 
 .site-footer {
     border-top: 1px solid var(--border);
